@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://jvs388423eg5"]
+
+[ext_resource type="Script" uid="uid://dh5xlp51n8t0u" path="res://custom_resources/card.gd" id="1_wba1x"]
+
+[resource]
+script = ExtResource("1_wba1x")
+id = "warrior_axe_attack"
+target = 1
+metadata/_custom_type_script = "uid://dh5xlp51n8t0u"

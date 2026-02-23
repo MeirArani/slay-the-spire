@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://art/background.png" id="1_ybkl6"]
 [ext_resource type="PackedScene" uid="uid://br37nv5edtrye" path="res://scenes/card_ui/card_ui.tscn" id="2_ffvsa"]
 [ext_resource type="Script" uid="uid://bl2ugvmbp17ai" path="res://scenes/ui/hand.gd" id="2_xd4uy"]
+[ext_resource type="Resource" uid="uid://jvs388423eg5" path="res://characters/warrior/cards/warrior_axe_attack.tres" id="4_h0kxc"]
+[ext_resource type="Resource" uid="uid://coxen8d1kb704" path="res://characters/warrior/cards/warrior_block.tres" id="5_fh7rg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gynk"]
 size = Vector2(256, 100)
@@ -22,6 +24,7 @@ collision_layer = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CardDropArea" unique_id=2003703051]
 position = Vector2(128, 50)
 shape = SubResource("RectangleShape2D_7gynk")
+metadata/_edit_lock_ = true
 
 [node name="BattleUI" type="CanvasLayer" parent="." unique_id=294199960 groups=["ui_layer"]]
 
@@ -41,9 +44,12 @@ script = ExtResource("2_xd4uy")
 
 [node name="CardUI" parent="BattleUI/Hand" unique_id=1598140941 instance=ExtResource("2_ffvsa")]
 layout_mode = 2
+card = ExtResource("4_h0kxc")
 
 [node name="CardUI2" parent="BattleUI/Hand" unique_id=268628231 instance=ExtResource("2_ffvsa")]
 layout_mode = 2
+card = ExtResource("4_h0kxc")
 
 [node name="CardUI3" parent="BattleUI/Hand" unique_id=482011970 instance=ExtResource("2_ffvsa")]
 layout_mode = 2
+card = ExtResource("5_fh7rg")
