@@ -20,6 +20,10 @@ run/main_scene="uid://dgmyrosbqi005"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://dpl68n7ons5pg"
 
+[autoload]
+
+Events="*uid://du7emi1xbxm2k"
+
 [debug]
 
 gdscript/warnings/unused_signal=0
