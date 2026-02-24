@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d646m68vq6g8"]
+
+[ext_resource type="Texture2D" uid="uid://1u3b3hwqd8yh" path="res://art/tile_0110.png" id="1_4a83h"]
+[ext_resource type="Script" uid="uid://dftl8n28mg41p" path="res://scenes/enemy/enemy.gd" id="1_tjssy"]
+[ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="2_40wdo"]
+[ext_resource type="PackedScene" uid="uid://dwd51nq7ofn1e" path="res://scenes/ui/stats_ui.tscn" id="3_tjssy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pll4o"]
+
+[node name="Enemy" type="Area2D" unique_id=1445764918 groups=["enemies"]]
+collision_layer = 4
+script = ExtResource("1_tjssy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=717177713]
+texture = ExtResource("1_4a83h")
+
+[node name="Arrow" type="Sprite2D" parent="." unique_id=1647899473]
+visible = false
+position = Vector2(16, 0)
+rotation = -1.5707964
+texture = ExtResource("2_40wdo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1737102074]
+shape = SubResource("RectangleShape2D_pll4o")
+
+[node name="StatsUI" parent="." unique_id=1513095442 instance=ExtResource("3_tjssy")]
+offset_top = 8.0
+offset_bottom = 24.0
