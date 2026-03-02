@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c3m3xejkf2uix"]
+
+[ext_resource type="Script" uid="uid://3b1vh5k5ui2i" path="res://scenes/enemy/enemy_action_picker.gd" id="1_ubmf8"]
+
+[node name="EnemyActionPicker" type="Node" unique_id=104646278]
+script = ExtResource("1_ubmf8")

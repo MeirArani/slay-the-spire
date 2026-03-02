@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://art/background.png" id="1_ybkl6"]
 [ext_resource type="PackedScene" uid="uid://d646m68vq6g8" path="res://scenes/enemy/enemy.tscn" id="2_agsc7"]
 [ext_resource type="Script" uid="uid://bl2ugvmbp17ai" path="res://scenes/ui/hand.gd" id="2_xd4uy"]
-[ext_resource type="Resource" uid="uid://ci5dhwredffqw" path="res://enemies/crab/test_enemy.tres" id="3_oiw7q"]
 [ext_resource type="PackedScene" uid="uid://dfvb8afakyuid" path="res://scenes/card_target_selector/card_target_selector.tscn" id="3_pll4o"]
 [ext_resource type="PackedScene" uid="uid://cfsh37iawsdmc" path="res://scenes/player/player.tscn" id="3_py4tk"]
 [ext_resource type="Resource" uid="uid://cxfqdjmwfpkpy" path="res://characters/warrior/warrior.tres" id="4_agsc7"]
+[ext_resource type="Resource" uid="uid://b1njbtms2f54i" path="res://enemies/crab/crab_enemy.tres" id="5_icoan"]
 [ext_resource type="Script" uid="uid://dqcdgjbyg1ono" path="res://scenes/ui/battle_ui.gd" id="7_icoan"]
 [ext_resource type="Script" uid="uid://bnkueax6rk6jk" path="res://scenes/player/player_handler.gd" id="8_mxe8n"]
 [ext_resource type="PackedScene" uid="uid://b3ymgf6hk7gwc" path="res://scenes/ui/mana_ui.tscn" id="11_fisqk"]
@@ -39,7 +39,7 @@ metadata/_edit_lock_ = true
 
 [node name="Enemy" parent="." unique_id=1445764918 instance=ExtResource("2_agsc7")]
 position = Vector2(216, 83)
-stats = ExtResource("3_oiw7q")
+stats = ExtResource("5_icoan")
 
 [node name="Player" parent="." unique_id=316081190 instance=ExtResource("3_py4tk")]
 position = Vector2(55, 80)
