@@ -19,6 +19,7 @@ func perform_action() -> void:
 		return
 	
 	var block_effect := BlockEffect.new()
+	block_effect.sound = sound
 	block_effect.amount = block;
 	block_effect.execute([enemy])
 	

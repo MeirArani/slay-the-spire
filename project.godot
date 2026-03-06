@@ -20,9 +20,16 @@ run/main_scene="uid://dgmyrosbqi005"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://dpl68n7ons5pg"
 
+[audio]
+
+buses/default_bus_layout="uid://bq1htv30cqqpd"
+
 [autoload]
 
 Events="*uid://du7emi1xbxm2k"
+Shaker="*uid://c2u8jcuna4wb4"
+MusicPlayer="*uid://b8h1nebcf6587"
+SFXPlayer="*uid://csh5cjkvx6xl4"
 
 [debug]
 

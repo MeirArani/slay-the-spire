@@ -2,21 +2,50 @@
 
 [ext_resource type="Script" uid="uid://3b1vh5k5ui2i" path="res://scenes/enemy/enemy_action_picker.gd" id="1_bjf0w"]
 [ext_resource type="Script" uid="uid://cjdjc7p3um6gm" path="res://enemies/crab/crab_attack_action.gd" id="2_fqf88"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_mdraf"]
 [ext_resource type="Script" uid="uid://dt7j1r6xfkd2" path="res://enemies/crab/crab_block_action.gd" id="3_nw8nb"]
+[ext_resource type="Script" uid="uid://dip3gm8vurlaw" path="res://custom_resources/intent.gd" id="4_5dkpn"]
 [ext_resource type="Script" uid="uid://cc43lt4mbstka" path="res://enemies/crab/crab_mega_block_action.gd" id="4_mdraf"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://art/enemy_attack.ogg" id="5_trgox"]
+[ext_resource type="Texture2D" uid="uid://bi6pfjs32f820" path="res://art/tile_0101.png" id="6_5dkpn"]
+[ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://art/block.ogg" id="8_yihd4"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="8_yv4lo"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://art/enemy_block.ogg" id="11_34me6"]
+
+[sub_resource type="Resource" id="Resource_yv4lo"]
+script = ExtResource("4_5dkpn")
+number = "7"
+icon = ExtResource("3_mdraf")
+metadata/_custom_type_script = "uid://dip3gm8vurlaw"
+
+[sub_resource type="Resource" id="Resource_bm7hr"]
+script = ExtResource("4_5dkpn")
+icon = ExtResource("6_5dkpn")
+metadata/_custom_type_script = "uid://dip3gm8vurlaw"
+
+[sub_resource type="Resource" id="Resource_moca1"]
+script = ExtResource("4_5dkpn")
+icon = ExtResource("8_yv4lo")
+metadata/_custom_type_script = "uid://dip3gm8vurlaw"
 
 [node name="CrabEnemyAI" type="Node" unique_id=104646278]
 script = ExtResource("1_bjf0w")
 
 [node name="AttackAction" type="Node" parent="." unique_id=411597831]
 script = ExtResource("2_fqf88")
+intent = SubResource("Resource_yv4lo")
+sound = ExtResource("5_trgox")
 type = 1
 chance_weight = 1.0
 
 [node name="BlockAction" type="Node" parent="." unique_id=1079331110]
 script = ExtResource("3_nw8nb")
+intent = SubResource("Resource_bm7hr")
+sound = ExtResource("8_yihd4")
 type = 1
 chance_weight = 1.0
 
 [node name="MegaBlockAction" type="Node" parent="." unique_id=2106187995]
 script = ExtResource("4_mdraf")
+intent = SubResource("Resource_moca1")
+sound = ExtResource("11_34me6")
