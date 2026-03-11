@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ch1gnwe5vvx30"]
 
+[ext_resource type="Script" uid="uid://g0vl80bbu6rm" path="res://scenes/ui/battle_over_panel.gd" id="1_dna7b"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ebas6"]
 bg_color = Color(0, 0, 0, 0.23137255)
 
@@ -7,12 +9,14 @@ bg_color = Color(0, 0, 0, 0.23137255)
 font_size = 20
 
 [node name="BattleOverPanel" type="Panel" unique_id=669042523]
+process_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ebas6")
+script = ExtResource("1_dna7b")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=151962199]
 layout_mode = 1
@@ -29,17 +33,20 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=1770272677]
+unique_name_in_owner = true
 layout_mode = 2
 text = "Victorious!"
 label_settings = SubResource("LabelSettings_dna7b")
 
 [node name="ContinueButton" type="Button" parent="VBoxContainer" unique_id=1145282305]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 16)
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Awesome!"
 
 [node name="RestartButton" type="Button" parent="VBoxContainer" unique_id=297351492]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(50, 16)
 layout_mode = 2
 size_flags_horizontal = 4
